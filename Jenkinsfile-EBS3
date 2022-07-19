@@ -4,9 +4,9 @@ pipeline {
         AWS_ACCESS_KEY_ID     = credentials('class-jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('class-jenkins-aws-secret-access-key')
         ARTIFACT_NAME = 'hello-world.war'
-        AWS_S3_BUCKET = 'jenkins-storage-d3a1'
-        AWS_EB_APP_NAME = 'class-d3a1'
-        AWS_EB_ENVIRONMENT = 'Classd3a1-env'
+        AWS_S3_BUCKET = 'jenkins-storage-java'
+        AWS_EB_APP_NAME = 'j-java'
+        AWS_EB_ENVIRONMENT = 'Jjava-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
     } 
     stages {
